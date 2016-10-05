@@ -1,0 +1,6 @@
+[submodule "apps/test-app"]
+	path = apps/test-app
+	url = git@github.com:cloudfoundry-samples/test-app.git
+[submodule "apps/cf-pgsql-sample-app"]
+	path = apps/cf-pgsql-sample-app
+	url = git@github.com:davecheney/cf-pgsql-sample-app.git

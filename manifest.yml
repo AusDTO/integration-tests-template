@@ -1,0 +1,21 @@
+---
+
+applications:
+
+- name: int-tests-cf-pgsql-sample-app-DATE_STAMP_TOKEN
+  path: apps/cf-pgsql-sample-app
+  memory: 128M
+  disk_quota: 128M
+  instances: 1
+  buildpack: go_buildpack
+  service:
+  - int-tests-cf-pgsql-sample-app-db-DATE_STAMP_TOKEN
+  env:
+    GOVERSION: go1.6
+    GOPACKAGENAME: github.com/davecheney/cf-pgsql-sample-app
+- name: int-tests-test-app-DATE_STAMP_TOKEN
+  path: apps/test-app
+  memory: 64M
+  disk_quota: 64M
+  instances: 1
+  buildpack: go_buildpack
